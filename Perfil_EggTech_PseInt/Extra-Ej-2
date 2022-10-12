@@ -1,0 +1,14 @@
+Algoritmo sin_titulo
+	Definir num como Cadena
+	Definir conver Como Entero
+	Escribir "Ingrese un número: "
+	Leer num
+	conver = convertir (num)
+	Escribir "Número convertido en entero: ",conver
+FinAlgoritmo
+
+Funcion x <- convertir(num)
+	Definir x Como Entero
+	x = ConvertirANumero(num)
+FinFuncion
+	

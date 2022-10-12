@@ -1,0 +1,36 @@
+Algoritmo ej_extra_7
+//	Realizar una función que permita obtener el término n de la sucesión de Fibonacci. La
+//sucesión de Fibonacci es la sucesión de los siguientes números:
+//	1, 1, 2, 3, 5, 8, 13, 21, 34, ...
+//	Donde cada uno de los números se calcula sumando los dos anteriores a él.
+	Definir num, res Como Entero
+	Escribir "Ingrese un número entero:"
+	Leer num
+	res = fibo(num)
+FinAlgoritmo
+
+Funcion r <- fibo(n)
+	Definir r, i, n1, n2, n3 Como Entero
+	n1 <- 0
+	n2 <- 1 
+	n3 <- 0
+	Para i <- 1 Hasta n Hacer
+		Si i = 1 Entonces
+			Escribir Sin Saltar 1 ", "
+		SiNo	
+			Si i <> n Entonces
+				n3 = n1 + n2
+				Escribir Sin Saltar n3 ", "
+				n1 = n2
+				n2 = n3
+			SiNo
+				n3 = n1 + n2
+				Escribir Sin Saltar n3 
+				n1 = n2
+				n2 = n3
+			FinSi
+		FinSi
+	FinPara
+	Escribir ""
+FinFuncion
+	
